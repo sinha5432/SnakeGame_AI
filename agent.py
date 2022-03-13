@@ -140,6 +140,7 @@ def train():
 
             if score > record:
                 record = score
+                print('Saving New Model')
                 agent.model.save()
 
             print('Game', agent.n_games, 'Score', score, 'Record: ', record)
